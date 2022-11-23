@@ -92,12 +92,12 @@ add_executable(franka_gripper_online
 add_dependencies(franka_gripper_online
   ${${PROJECT_NAME}_EXPORTED_TARGETS}
   ${catkin_EXPORTED_TARGETS}
-  franka_gripper
+  ## franka_gripper
 )
 
 target_link_libraries(franka_gripper_online
    ${catkin_LIBRARIES}
-   franka_gripper
+   ## franka_gripper
 )
 
 target_include_directories(franka_gripper_online SYSTEM PUBLIC
